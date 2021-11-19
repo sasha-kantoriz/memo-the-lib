@@ -1,10 +1,27 @@
 <template>
+  <logo/>
+  <navbar/>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
+
 </template>
+
+<script>
+//importing bootstrap 5
+import "bootstrap/dist/css/bootstrap.min.css";
+import navbar from "@/components/navbar.vue";
+import logo from "@/components/header.vue";
+
+export default {
+  components: {
+    logo,
+    navbar,
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
