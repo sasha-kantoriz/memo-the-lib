@@ -1,12 +1,8 @@
 <template>
-  <logo/>
-  <navbar/>
-  <landing/>
-
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
   <router-view />
 
 </template>
@@ -15,18 +11,10 @@
 //importing bootstrap 5
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import logo from "@/components/header.vue";
-import navbar from "@/components/navbar.vue";
-import landing from '@/components/landing.vue';
-
 
 
 export default {
-  components: {
-    logo,
-    navbar,
-    landing,
-  }
+
 }
 </script>
 
