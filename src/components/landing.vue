@@ -1,5 +1,6 @@
 <template>
-    <div id="main" class="container">
+    <div id="main">
+        <div class="container-fluid">
         <div class="row">
             <div class="cover col-sm-12 col-md-12 col-lg-12">
                 <h1>
@@ -10,6 +11,7 @@
                 </p>
                 <a class="Amend btn btn-primary" href="#amend_service">Amend </a>
             </div>
+        </div>
         </div>
     </div>
 </template>
@@ -25,24 +27,24 @@ export default {
     max-width: 100%;
 }
 .row {
-    min-width: 100vw;
+
+}
+.cover {
+       max-width: 100vw;
     min-height: 24%;
     max-height: 90%;
     background: rgb(0,0,0, 0.5);
     padding: 25px 0;
     position: absolute;
-    bottom: 0;
-}
-.cover {
-    
+    bottom: 0; 
 }
 #main {
-    position: relative;
+    /* position: relative; */
     background: url("../assets/lib12_1.jpg");
     height: 90vh;
     background-size: cover;
     background-position: center;
-    /* padding: 280px 0 220px; */
+    padding: 280px 0 220px;
 }
 #main h1 {
     color: whitesmoke;
