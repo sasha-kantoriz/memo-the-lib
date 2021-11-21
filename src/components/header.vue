@@ -25,7 +25,7 @@ export default {
 }
 .header_title {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     /* font-family:serif; */
     /* font-family: monospace; */
