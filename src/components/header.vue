@@ -1,10 +1,10 @@
 <template>
     <header class="header">
         <div class="container-fluid header_inner">
-            <a class="navbar-brand header_title" href="#">
+            <a class="navbar-brand" href="#">
                 <img class="d-inline-block header_logo" src="../assets/icon-of-books.png" alt="SPA site's logo" width="64" height="64">
-                Memo, the Lib
             </a>
+            <h1 class="header_title">Memo, the Lib</h1>
         </div>
     </header>
 </template>
