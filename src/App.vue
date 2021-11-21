@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import logo from "@/components/header.vue";
 import navbar from "@/components/navbar.vue";
-import landing from './components/landing.vue';
+import landing from '@/components/landing.vue';
 
 
 

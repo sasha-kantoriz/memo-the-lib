@@ -1,17 +1,11 @@
 <template>
-    <div id="main">
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
-            <div class="cover col-sm-12 col-md-12 col-lg-12">
-                <h1>
-                    Memo the Lib, book shelve 
-                </h1>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ab voluptatem, cum totam maxime quae quam praesentium dicta! Explicabo laboriosam officia quam quis perspiciatis dolorem ducimus quas provident, libero repudiandae.
-                </p>
-                <a class="Amend btn btn-primary" href="#amend_service">Amend </a>
+            <div class="column">
+                <h1>Memo library: book shelve</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam deserunt expedita omnis neque harum maxime praesentium, totam impedit soluta, assumenda saepe sed culpa illum fuga pariatur. Ex, exercitationem laborum.</p>
+                <a href="#" class="btn btn-primary">Amend</a>
             </div>
-        </div>
         </div>
     </div>
 </template>
@@ -22,47 +16,34 @@ export default {
 }
 </script>
 
-<style scoped>
-.container {
-    max-width: 100%;
+<style scoped lang=scss>
+.container-fluid {
+    height: 83vh;
+    background: url('../assets/lib9.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 .row {
+    min-height: 25%;
+    width: 100vw;
+    background: transparentize(#000, 0.25);
+    padding: 2.5em 0px;
+}
 
+.column {
+    position: relative;
+    font-family: monospace;
+
+    h1 {
+        color: whitesmoke;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    p {
+        font-size: 0.9em;
+        color: whitesmoke;
+        padding: 5px;
+    }
 }
-.cover {
-       max-width: 100vw;
-    min-height: 24%;
-    max-height: 90%;
-    background: rgb(0,0,0, 0.5);
-    padding: 25px 0;
-    position: absolute;
-    bottom: 0; 
-}
-#main {
-    /* position: relative; */
-    background: url("../assets/lib12_1.jpg");
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    padding: 280px 0 220px;
-}
-#main h1 {
-    color: whitesmoke;
-    font-size: 2.6em;
-    font-weight: bold;
-    /* text-transform: uppercase; */
-}
-#main p {
-    font-size: 16px;
-    color: whitesmoke;
-    margin-top: 1em;
-    padding-bottom: 25px;
-}
-/* #main .Amend {
-    background: #718093;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-} */
 </style>
