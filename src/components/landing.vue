@@ -6,7 +6,21 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam deserunt expedita omnis neque harum maxime praesentium, totam impedit soluta, assumenda saepe sed culpa illum fuga pariatur. Ex, exercitationem laborum.
                 </p>
-                <a class="btn btn-primary" href="#">Amend</a>
+
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <a type="button" class="btn btn-outline-primary" href="#">New Book</a>
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Library
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Artistic</a></li>
+                                <li><a class="dropdown-item" href="#">Technical</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -22,15 +36,15 @@ export default {
 .container-fluid {
     height: 88vh;
     @media screen and (min-width:250px) and (max-width:640px){
-        background: url("../assets/lib9-3.jpg");
+        background: url("../assets/lib3.jpg");
         background-size: cover;
     }
     @media screen and (min-width:641px) and (max-width:992px){
-        background: url("../assets/lib9-2.jpg");
+        background: url("../assets/lib12.jpg");
         background-size: cover;
     }
     @media screen and (min-width:993px){
-        background: url("../assets/lib9-1.jpg");
+        background: url("../assets/lib9.jpg");
         background-size: cover;
     }
     display: flex;
@@ -56,6 +70,9 @@ export default {
     p {
         font-size: 0.9em;
         padding: 5px;
+    }
+    a {
+        margin: 0 2px;
     }
 }
 </style>
