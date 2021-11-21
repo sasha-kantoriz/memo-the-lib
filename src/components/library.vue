@@ -1,5 +1,7 @@
 <template>
-    <v-for book in >
+    <v-for book in {{books}}>
+        <book/>
+    <endfor/>
 </template>
 
 <script>
