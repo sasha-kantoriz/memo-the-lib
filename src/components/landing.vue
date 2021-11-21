@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="column">
-                <h1>Memo library: book shelve</h1>
+                <h1>Memo library: a book shelve</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam deserunt expedita omnis neque harum maxime praesentium, totam impedit soluta, assumenda saepe sed culpa illum fuga pariatur. Ex, exercitationem laborum.
                 </p>
@@ -20,12 +20,23 @@ export default {
 
 <style scoped lang="scss">
 .container-fluid {
-    height: 83vh;
-    background: url("../assets/lib9.jpg");
-    background-size: cover;
+    height: 88vh;
+    @media screen and (min-width:250px) and (max-width:640px){
+        background: url("../assets/lib9-3.jpg");
+        background-size: cover;
+    }
+    @media screen and (min-width:641px) and (max-width:992px){
+        background: url("../assets/lib9-2.jpg");
+        background-size: cover;
+    }
+    @media screen and (min-width:993px){
+        background: url("../assets/lib9-1.jpg");
+        background-size: cover;
+    }
     display: flex;
     align-items: center;
 }
+
 .row {
     min-height: 25%;
     width: 100vw;
