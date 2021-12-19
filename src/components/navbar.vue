@@ -4,10 +4,9 @@
             <div class="navbar-logo">
                 <li>
                     <div class="navbar-brand">
-                    <a class="navbar-brand" href="#">
-                        <img class="header-logo" src="../assets/icon-of-books.png" alt="SPA site's logo" width="64" height="64">
-                    </a>
-                    <h1 class="header-title">Memo, the Lib</h1>
+                        <a class="navbar-brand" href="#">
+                            <img class="header-logo" src="../assets/icon-of-books.png" alt="SPA site's logo" width="64" height="64">
+                        </a>
                     </div>
                 </li>
             </div>
@@ -42,6 +41,7 @@ nav {
 .nav {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
 .navbar-brand {
     display: flex;
@@ -49,21 +49,16 @@ nav {
     min-height: 100px;
     margin-left: 20px;
 }
-.header-title {
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family:initial;
-    color: rgb(61, 60, 60);
-}
 .navbar-links {
     align-items: center;
     display: flex;
     margin-right: 20px;
 }
 .nav-item a {
-    font-size: 1.5em;
+    min-height: 48px;
+    font-size: 0.87em;
     font-family: monospace;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(61, 60, 60);
 }
 .nav-item a:hover {
