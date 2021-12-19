@@ -8,10 +8,11 @@
                 </p>
 
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <a type="button" class="btn btn-outline-primary" href="#">New Book</a>
+                    <a type="button" class="btn btn-outline-light" href="#">New Book</a>
+                    
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                         <div class="btn-group" role="group">
-                            <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Library
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -34,7 +35,7 @@ export default {
 
 <style scoped lang="scss">
 .container-fluid {
-    height: 88vh;
+    height: 87vh;
     @media screen and (min-width:250px) and (max-width:640px){
         background: url("../assets/lib3.jpg");
         background-size: cover;
@@ -59,7 +60,6 @@ export default {
 }
 
 .column {
-    position: relative;
     font-family: monospace;
     color: whitesmoke;
 
